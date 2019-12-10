@@ -1,0 +1,9 @@
+{
+  "mongoassy": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "${MONGO_URL_TEST}",
+    "name": "mongoassy",
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongoassy",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mongoassy",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongoassy",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongoassy",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongoassy",
+    "public": false
+  },
+  "cat_test": {
+    "dataSource": "mongoassy",
+    "public": true
+  },
+  "cat_idf": {
+    "dataSource": "mongoassy",
+    "public": true
+  }
+}
